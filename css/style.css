@@ -29,7 +29,7 @@ a {
   }
 }
 
-p {
+p, li {
   font-size: 2rem;
 }
 /*********************/
@@ -257,26 +257,81 @@ p {
 /* - Informacion extra Perfil*/
 .perfil__extra {
   width: 100%;
+  margin: 2rem 0;
+
 }
 
 .info {
   display: flex;
+  flex-direction: column;
   align-items: center;
-
   width: 100%;
+  border-bottom: 2px solid #e3e3e3;
+  gap: 2rem;
+  margin: 0 0 2rem 0;
+}
+.info:last-child {
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .info {
+    padding: 2rem;
+    flex-direction: row;
+    align-items: start;
+    gap: unset;
+  }
 }
 
 .info__imagen {
   background-color: black;
-  padding: .5rem;
-  border-radius: 1rem;
+  padding: 3rem;
+  border-radius: 2rem;
+  width: 15rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .info__imagen img{
-  width: 5rem;
   justify-items: start;
   filter: invert(100%);
 }
 
+@media (min-width: 768px) {
+    .info__imagen {
+      width: 6rem;
+      height: 6rem;
+      padding: .5rem;
+      border-radius: .5rem;
+    } 
+    .info__imagen img {
+      width: 3.5rem;
+    }
+}
+
 .info__texto {
-  padding: 2rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+.info__texto ul {
+  padding: 0 2rem;
+}
+@media (min-width: 768px) {
+    .info__texto {
+      text-align: start;
+    }
+}
+.info__texto h3{
+  margin: 0;
+  font-size: 2.5rem;
+}
+.info__texto h3 span {
+  font-size: 2.8rem;
+}
+
+@media (min-width: 768px) {
+  .info__texto h3 span {
+    display: block;
+    font-size: 2.2rem;
+  }
 }

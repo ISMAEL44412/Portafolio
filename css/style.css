@@ -1,0 +1,251 @@
+/* :root {
+
+
+} */
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 768px) {
+  a {
+    font-size: 2rem;
+  }
+}
+
+p {
+  font-size: 2rem;
+}
+/*********************/
+/* Utilizables */
+/*********************/
+
+.contenedor {
+  width: min(95%, 130rem);
+}
+
+.contenedor,
+.contenedor-sm {
+  margin: 0 auto;
+}
+/*********************/
+/* Navegacion Header
+/*********************/
+.navegacion {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .navegacion {
+    height: 7rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.navegacion__logo {
+  height: 20rem;
+}
+@media (min-width: 768px) {
+  .navegacion__logo {
+    height: 100%;
+  }
+}
+.logo {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .logo {
+    height: 100%;
+  }
+}
+
+.navegacion__enlaces {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+.navegacion__enlaces a {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .navegacion__enlaces {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navegacion__enlaces a {
+    margin: 0 5rem;
+    font-size: 2rem;
+  }
+}
+
+/*********************/
+/* HERO */
+/*********************/
+.hero {
+  margin-top: 5rem;
+  border-bottom: solid 2px #e3e3e3;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .hero {
+    margin-top: 8rem;
+  }
+}
+
+.hero__presentacion h1 {
+  font-size: 3rem;
+}
+.hero__presentacion span {
+  font-size: 5rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .hero__presentacion h1 span {
+    font-size: 6rem;
+  }
+}
+
+/*- Hero logos github | linkedin | instagram */
+.hero__contactos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .hero__contactos {
+    justify-content: start;
+  }
+}
+
+.hero__contactos a img {
+  height: 5rem;
+}
+
+/*- Hero acciones */
+.hero__acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .hero__acciones {
+    gap: 2rem;
+  }
+}
+.hero__descargar {
+  padding: 1.5rem;
+  background-color: rgb(22, 179, 179);
+  border-radius: 0.5rem;
+}
+.hero__proyectos {
+  border-bottom: solid 2px rgb(22, 179, 179);
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .hero__acciones {
+    justify-content: start;
+  }
+}
+
+/*******************/
+/* * Sobre mí */
+/*********************/
+.perfil {
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .perfil__informacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* - titulo-seccion - REUTILIZABLE */
+.titulo__seccion {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #a79696;
+}
+.titulo__seccion::before {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: aqua;
+  margin-top: 1rem;
+}
+@media (max-width: 767px) {
+  .titulo__seccion {
+    justify-content: center;
+  }
+  .titulo__seccion::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: aqua;
+    margin-top: 1rem;
+  }
+}
+
+/* - Perfil texto */
+
+.perfil__texto h3 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .perfil__texto {
+    border-right: 1px solid #e3e3e3;
+    padding: 0 W2rem;
+  }
+  .perfil__texto h3 {
+    text-align: start;
+  }
+}
+
+.perfil__texto blockquote {
+  background-color: rgba(53, 148, 148, 0.264);
+  padding: 2rem;
+  margin: 0;
+  color: #6b6262;
+  border-left: 2px solid rgb(53, 148, 148);
+}
+@media (min-width: 768px) {
+  .perfil__texto blockquote {
+    margin-right: 2rem;
+    }
+}

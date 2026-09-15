@@ -235,6 +235,9 @@ p {
   .perfil__texto h3 {
     text-align: start;
   }
+  .perfil__texto p {
+    line-height: 1.5;
+  }
 }
 
 .perfil__texto blockquote {
@@ -248,4 +251,32 @@ p {
   .perfil__texto blockquote {
     margin-right: 2rem;
     }
+}
+
+
+/* - Informacion extra Perfil*/
+.perfil__extra {
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.info__imagen {
+  background-color: black;
+  padding: .5rem;
+  border-radius: 1rem;
+}
+.info__imagen img{
+  width: 5rem;
+  justify-items: start;
+  filter: invert(100%);
+}
+
+.info__texto {
+  padding: 2rem;
 }

@@ -391,18 +391,21 @@ li {
 }
 
 .stack__iconos {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
   align-items: center;
 }
 .icono {
+  height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
-.icono img {
-  width: 5rem;
-  padding: 0;
-  margin: 0;
+
+.icono__imagen {
+  width: 5rem ;
+  height: 100%;
 }
+

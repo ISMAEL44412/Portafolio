@@ -345,19 +345,20 @@ li {
 /***********************/
 /* * Tecnologias */
 /**********************/
-
-.tecnologia-grid {
+.flex {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 
   @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
   }
 }
-.tecnologias__titulo,
-.tecnologias__titulo--texto {
+.div__titulo,
+.div__titulo--texto {
   padding: 2rem;
 }
 .svg {
@@ -432,6 +433,7 @@ p {
 }
 .extras {
   border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 2rem;
   @media (min-width: 1000px) {
     border-right: 1px solid #e3e3e3;
     border-bottom: none;

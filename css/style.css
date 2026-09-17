@@ -369,7 +369,10 @@ li {
   grid-row: 2/ 3;
   display: grid;
   @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -378,8 +381,11 @@ li {
   flex-direction: column;
   gap: 1rem;
   border: 1px solid #e3e3e3;
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1rem 0;
+  @media (min-width: 768px) {
+    margin: 1rem;
+    padding: 1rem;
+  }
 
 }
 .stack__titulo {
@@ -409,3 +415,14 @@ li {
   height: 100%;
 }
 
+.tecnologias__extras {
+  margin: 2rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -459,18 +459,87 @@ h3 {
   font-weight: bold;
 }
 
-.tecnologias-aprendiendo {
+.tecnologias-aprendiendo,
+.proyecto-tecnologias {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.tecnologias-aprendiendo span {
+.tecnologias-aprendiendo span,
+.proyecto-tecnologias span {
   padding: 0.5rem 1.5rem;
   border: 1px solid #159b9b;
   border-radius: 1.5rem;
   font-size: 1.5rem;
   color: #176b6b;
   background: #f5ffff;
+}
+
+/*  * PROYECTOS */
+.proyectos__grid {
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 2rem;
+  gap: 2rem;
+  @media (min-width: 1300px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.proyecto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  border: 1px solid #a79696;
+  @media (min-width: 768px) {
+    height: 30rem;
+    flex-direction: row;  
+  }
+}
+
+.proyecto__imagen img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  @media (min-width: 1200px) {
+    width: 30rem;
+  }
+}
+.proyecto__descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  @media (min-width: 1200px) {
+      gap: unset;
+  }
+}
+.proyecto__descripcion a {
+  background-color: #159b9b;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  border-radius: 1rem;
+  @media (min-width: 1200px) {
+    border-bottom: solid 2px rgb(22, 179, 179);
+    background-color: unset;
+    color: black;
+    border-radius: unset;
+    padding: 1rem ;
+    transition: 
+      background-color 1s,
+      color 1s;
+  }
+}
+
+.proyecto__descripcion a:hover {
+  background-color: #159b9b;
+  border-radius: .5rem;
+  color: white;
 }

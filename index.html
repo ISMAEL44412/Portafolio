@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Portafolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleColors.css">
 </head>
 
 <body>
@@ -452,7 +453,55 @@
       </div>
       </div>
     </section>
+    <section class="contactame">
+      <div class="contenedor">
+        <h2 class="titulo">Contactame</h2>
+        <div class="flex__contactame">
+          <div class="div__titulo">
+            <h3 class="titulo__secundario contactame__titulo"><span>Hablemos</span>¿Tienes un proyecto, una propuesta o
+              una oportunidad profesional? </h3>
+            <p class="contactame__subtitulo"> Estoy abierto a nuevos desafíos y a
+              seguir creciendo dentro del mundo del desarrollo de software.</p>
+              <div class="contactame__div--img">
+                <img src="email abierto.png" alt="Email abierto con mensaje">
+              </div>
+          </div>
+
+          <div class="div__titulo--texto contactame__contenedor--form">
+            <img class="svg" src="img/svg/handshake.svg" alt="Imagen de codigo">
+            <h2>Enviame un <span>mensaje</span></h2>
+            <p>Si buscas incorporar talento a tu equipo, necesitas desarrollar una solución web o simplemente quieres
+              conocer más sobre mi trabajo, puedes ponerte en contacto conmigo.</p>
+            <form class="formulario">
+              <div class="campo campo__nombre">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" placeholder="Tú nombre" id="nombre" required>
+              </div>
+              <div class="campo campo__email">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Tú email" id="email" required>
+              </div>
+              <div class="campo campo__empresa">
+                <label for="empresa">Empresa</label>
+                <input type="text" placeholder="Tú empresa (opcional)" id="empresa">
+              </div>
+              <div class="campo campo__descripcion">
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion" id="descripcion" placeholder="Cuentame más..."></textarea>
+              </div>
+              <input class="submit" type="submit" value="Enviar mensaje">
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="contenedor footer__flex">
+      <p>Todos los derechos reservados &copy; </p>
+    </div>
+  </footer>
   <script src="https://kit.fontawesome.com/8be980d900.js" crossorigin="anonymous"></script>
 </body>
 

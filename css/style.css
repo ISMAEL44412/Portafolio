@@ -61,7 +61,7 @@ li {
   .navegacion {
     height: 7rem;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .navegacion__logo {
@@ -105,16 +105,15 @@ li {
 /*********************/
 /* HERO */
 /*********************/
-.hero {
-  margin-top: 5rem;
-  border-bottom: solid 2px #e3e3e3;
-  padding-bottom: 5rem;
-}
-@media (min-width: 768px) {
-  .hero {
-    margin-top: 8rem;
-  }
-}
+
+/* .contenedor-video { /* * SIRVE para crear el menú mobile */
+/* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; */
+/* } */
 
 .hero__presentacion h1 {
   font-size: 3rem;
@@ -153,9 +152,10 @@ li {
 /*- Hero acciones */
 .hero__acciones {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
+  gap: 2rem;
 }
 @media (min-width: 768px) {
   .hero__acciones {
@@ -164,7 +164,6 @@ li {
 }
 .hero__descargar {
   padding: 1.5rem;
-  background-color: rgb(22, 179, 179);
   border-radius: 0.5rem;
 }
 .hero__proyectos {
@@ -199,6 +198,7 @@ li {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 100;
+  font-weight: bold;
   color: #a79696;
 }
 .titulo::before {
@@ -247,11 +247,9 @@ li {
 }
 
 .perfil__texto blockquote {
-  background-color: rgba(53, 148, 148, 0.264);
   padding: 2rem;
   margin: 0;
-  color: #6b6262;
-  border-left: 2px solid rgb(53, 148, 148);
+  margin-top: 2rem;
 }
 @media (min-width: 768px) {
   .perfil__texto blockquote {
@@ -290,7 +288,6 @@ li {
 }
 
 .info__imagen {
-  background-color: black;
   padding: 3rem;
   border-radius: 2rem;
   width: 15rem;
@@ -301,7 +298,6 @@ li {
 }
 .info__imagen img {
   justify-items: start;
-  filter: invert(100%);
 }
 
 @media (min-width: 768px) {
@@ -469,12 +465,14 @@ h3 {
 
 .tecnologias-aprendiendo span,
 .proyecto-tecnologias span {
+  font-family: var(--fuenteSecundaria);
   padding: 0.5rem 1.5rem;
-  border: 1px solid #159b9b;
   border-radius: 1.5rem;
   font-size: 1.5rem;
-  color: #176b6b;
-  background: #f5ffff;
+  margin: 1rem 0;
+}
+.proyecto-tecnologias span {
+  margin: 0;
 }
 
 /*  * PROYECTOS */
@@ -519,16 +517,19 @@ h3 {
     gap: unset;
   }
 }
+.proyecto__descripcion p {
+  font-size: 2rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
 .proyecto__descripcion a {
-  background-color: #159b9b;
   text-align: center;
   padding: 2rem;
-  color: white;
   border-radius: 1rem;
   @media (min-width: 1200px) {
-    border-bottom: solid 2px rgb(22, 179, 179);
+    border-bottom: solid 2px var(--cian);
     background-color: unset;
-    color: black;
     border-radius: unset;
     padding: 1rem;
     transition:
@@ -537,18 +538,12 @@ h3 {
   }
 }
 
-.proyecto__descripcion a:hover {
-  background-color: #159b9b;
-  border-radius: 0.5rem;
-  color: white;
-}
-
 /** CONTACTAME **/
 
 .flex__contactame {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   justify-content: center;
   @media (min-width: 1000px) {
     flex-direction: row;
@@ -556,14 +551,18 @@ h3 {
     gap: 2rem;
   }
 }
+.contactame__titulo span {
+  display: block;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
 .contactame__div--img {
   margin: 2rem 0;
   display: flex;
   justify-content: center;
-
 }
 .contactame__contenedor--form {
-  background-color: #6b6262;
   border-radius: 1rem;
   @media (min-width: 1000px) {
     border-radius: 2rem;
@@ -582,7 +581,7 @@ h3 {
 input {
   padding: 1rem;
   margin: 1rem 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 .campo__empresa,
 .campo__descripcion,
@@ -593,21 +592,30 @@ input {
 input,
 textarea {
   width: 100%;
+  font-family: var(--fuenteSecundaria);
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
 }
 textarea {
   height: 10rem;
 }
+.submit {
+  padding: 1.5rem;
 
-
-
+}
 /**FOOTER**/
 .footer {
-  background-color: #6b6262;
-  height: 10rem;
+  height: 7rem;
 }
 .footer__flex {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
+}
+.footer__flex p {
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
 }

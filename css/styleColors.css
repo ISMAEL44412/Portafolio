@@ -1,0 +1,205 @@
+:root {
+  --gris: #e1e1e1;
+  --cian: rgb(22, 179, 179);
+  --cianClaro: rgb(16, 255, 255);
+  --cianOscuro: rgb(20, 128, 128);
+  --blanco: white;
+  --negro: black;
+
+  --fuentePrincipal: "Open Sans", sans-serif;
+  --fuenteSecundaria: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuentePrincipal);
+}
+
+a,
+p,
+li {
+  font-family: var(--fuenteSecundaria);
+}
+
+blockquote {
+  font-family: var(--fuentePrincipal);
+}
+/** GENERALES **/
+.titulo {
+  color: var(--blanco);
+}
+.titulo__secundario {
+  color: var(--cianClaro);
+}
+
+p {
+  color: var(--blanco);
+}
+
+.svg {
+  filter: invert(100%);
+}
+
+/**** NAVEGACION****/
+header,
+main {
+  background-color: #0f181c;
+}
+.navegacion a {
+  color: white;
+}
+
+.navegacion a:hover {
+  color: var(--cianClaro);
+}
+
+/****** HERO ****/
+.hero__presentacion span {
+  color: var(--cian);
+}
+
+.hero__presentacion h1,
+.hero__presentacion p,
+.hero__presentacion a,
+.hero__descargar,
+.hero__proyectos {
+  color: var(--blanco);
+}
+
+.hero__contactos a img {
+  filter: invert(100%);
+}
+.hero__contactos a img:hover {
+  filter: invert(20%);
+}
+
+.hero__descargar {
+  background-color: var(--cian);
+  transition: background-color 1s ease;
+}
+.hero__descargar:hover {
+  background-color: var(--cianOscuro);
+}
+.hero__proyectos {
+  transition: font-size 1s ease;
+}
+
+.hero__proyectos:hover {
+  font-size: 2.2rem;
+}
+
+.proyecto__descripcion a {
+  background-color: var(--cian);
+}
+
+/****** SOBRE MI ***/
+
+.info__texto span {
+  color: var(--cian);
+}
+
+blockquote {
+  background-color: rgba(20, 128, 128, 0.589);
+  border-left: 2px solid var(--cianClaro);
+  color: var(--blanco);
+}
+.info__imagen {
+  background-color: var(--blanco);
+}
+.info__texto {
+  color: var(--blanco);
+}
+
+/****** TECNOLOGIAS *****/
+.div__titulo--texto h3 {
+  color: var(--cian);
+}
+.stack__titulo--texto h3,
+.extras__titulo--titulo h3 {
+  color: var(--cian);
+}
+
+.lista-check {
+  color: var(--blanco);
+}
+.lista-check span {
+  color: var(--cian);
+}
+
+.tecnologias-aprendiendo span,
+.proyecto-tecnologias span {
+  color: var(--blanco);
+  background-color: rgba(15, 196, 196, 0.61);
+  border: 1px solid var(--cianClaro);
+  font-weight: 400;
+}
+
+/***** MIS PROYECTOS ******/
+.proyecto__descripcion h3 {
+  color: var(--cian);
+}
+
+.proyecto__descripcion a {
+  background-color: var(--cian);
+  color: white;
+}
+.proyecto__descripcion a:hover {
+  background-color: var(--cianOscuro);
+  border-radius: 0.5rem;
+  color: white;
+}
+
+/**** CONTACTAME ********/
+.contactame__titulo {
+  color: var(--blanco);
+}
+.contactame__titulo span {
+  color: var(--cianClaro);
+}
+
+.contactame__contenedor--form {
+  background-color: rgba(20, 128, 128, 0.658);
+  border: 1px solid var(--cianClaro);
+}
+
+.contactame__contenedor--form h2 {
+  color: var(--cianClaro);
+}
+
+.contactame__div--img img {
+  filter: invert(100%);
+}
+.campo label {
+  color: var(--cianClaro);
+  font-family: var(--fuenteSecundaria);
+  font-weight: bold;
+}
+.campo input,
+.campo textarea {
+  background-color: rgba(208, 255, 255, 0.425);
+  font-family: var(--fuenteSecundaria);
+  color: var(--blanco);
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+}
+.submit {
+  background-color: var(--cian);
+  border: none;
+  font-family: var(--fuenteSecundaria);
+  color: var(--blanco);
+  transition:
+    background-color 1s ease,
+    color 1s ease;
+}
+.submit:hover {
+  background-color: var(--cianClaro);
+  color: var(--negro);
+}
+
+
+/*** FOOTER **/
+.footer {
+  background-color: var(--cianOscuro);
+}

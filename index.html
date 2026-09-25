@@ -5,7 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Portafolio</title>
+  <!-- * fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!-- * styles-->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/video.css">
   <link rel="stylesheet" href="css/styleColors.css">
 </head>
 
@@ -22,35 +31,43 @@
         <a class="navegacion__enlace" href="#">Mís Proyectos</a>
         <a class="navegacion__enlace" href="#">Contactame</a>
       </div>
-      <button><i class="fa-solid fa-moon"></i></button>
+      <!-- <button><i class="fa-solid fa-moon"></i></button> -->
     </nav>
   </header>
   <!-- * Main -->
   <main>
     <section class="hero">
-      <div class="contenedor">
-        <div class="hero__presentacion">
-          <h1>Hola soy <span>Ismael Romero</span></h1>
-          <p>Analista de Sistemas - Desarrollador full stack</p>
-          <p>Apasionado por la tecnologia y el desarrollo de software.<br>Actualmente enfocado en crear soluciones web
-            modernas, funcionales y eficientes.</p>
+      <div class="video">
+        <div class="overlay">
+          <div class="contenedor contenido-video">
+            <div class="hero__presentacion">
+              <h1>Hola soy <span>Ismael Romero</span></h1>
+              <p>Analista de Sistemas - Desarrollador full stack</p>
+              <p>Apasionado por la tecnologia y el desarrollo de software.<br>Actualmente enfocado en crear soluciones
+                web
+                modernas, funcionales y eficientes.</p>
+            </div>
+            <div class="hero__contactos">
+              <a href="#" title="linkedIn">
+                <img src="img/svg/linkedin.svg" alt="Enlace hacia linkedIn">
+              </a>
+              <a href="#" title="Github">
+                <img src="img/svg/github.svg" alt="Enlace hacia Github">
+              </a>
+              <a href="#" title="Instagram">
+                <img src="img/svg/instagram.svg" alt="Enlace hacia instagram">
+              </a>
+            </div>
+            <div class="hero__acciones">
+              <a href="asset/CV_RomeroIsmael.pdf" download="CV_RomeroIsmael" class="hero__descargar"><i
+                  class="fa-solid fa-download"></i> Descargar CV</a>
+              <a href="#" class="hero__proyectos">Ver mís proyectos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="hero__contactos">
-          <a href="#" title="linkedIn">
-            <img src="img/svg/linkedin.svg" alt="Enlace hacia linkedIn">
-          </a>
-          <a href="#" title="Github">
-            <img src="img/svg/github.svg" alt="Enlace hacia Github">
-          </a>
-          <a href="#" title="Instagram">
-            <img src="img/svg/instagram.svg" alt="Enlace hacia instagram">
-          </a>
-        </div>
-        <div class="hero__acciones">
-          <a href="asset/CV_RomeroIsmael.pdf" download="CV_RomeroIsmael" class="hero__descargar"><i
-              class="fa-solid fa-download"></i> Descargar CV</a>
-          <a href="#" class="hero__proyectos">Ver mís proyectos <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
+        <video autoplay muted loop>
+          <source src="background-1.mp4" type="video/mp4">
+        </video>
       </div>
     </section>
     <!-- * Sobre mi -->
@@ -79,7 +96,7 @@
           <div class="perfil__extra">
             <div class="info">
               <div class="info__imagen">
-                <img src="img/svg/graduation.svg" alt="">
+                <img src="img/svg/graduation.svg" alt="sobrero de graduacion">
               </div>
               <div class="info__texto">
                 <h3>01 <span>Formación</span></h3>
@@ -248,7 +265,7 @@
               </div>
 
               <div class="icono">
-                <img class="icono__imagen" src="img/svg/tecnologias/herramientas/github_light.svg" alt="icono de Github"
+                <img class="icono__imagen" src="img/svg/tecnologias/herramientas/github_dark.svg" alt="icono de Github"
                   title="Github">
                 <p class="icono__texto">Github</p>
               </div>
@@ -322,7 +339,7 @@
                 <p class="icono__texto">Notion</p>
               </div>
               <div class="icono">
-                <img class="icono__imagen" src="img/svg/tecnologias/otros/markdown-light.svg" alt="icono de Markdown"
+                <img class="icono__imagen" src="img/svg/tecnologias/otros/markdown-dark.svg" alt="icono de Markdown"
                   title="Markdown">
                 <p class="icono__texto">Markdown</p>
               </div>
@@ -361,7 +378,7 @@
               </div>
             </div>
             <div class="extras__contenido">
-              <ul>
+              <ul class="lista-check">
                 <li><span>Análisis</span> Relevamiento de requisitos y definición de funcionalidades</li>
                 <li><span>Desarrollo</span> Frontend, backend y lógica de negocio.</li>
                 <li><span>Bases de datos</span> Modelado, relaciones y consultas SQL</li>
@@ -462,9 +479,9 @@
               una oportunidad profesional? </h3>
             <p class="contactame__subtitulo"> Estoy abierto a nuevos desafíos y a
               seguir creciendo dentro del mundo del desarrollo de software.</p>
-              <div class="contactame__div--img">
-                <img src="email abierto.png" alt="Email abierto con mensaje">
-              </div>
+            <div class="contactame__div--img">
+              <img src="email abierto.png" alt="Email abierto con mensaje">
+            </div>
           </div>
 
           <div class="div__titulo--texto contactame__contenedor--form">
@@ -499,7 +516,7 @@
   </main>
   <footer class="footer">
     <div class="contenedor footer__flex">
-      <p>Todos los derechos reservados &copy; </p>
+      <p>Todos los derechos reservados &copy; 2026 </p>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/8be980d900.js" crossorigin="anonymous"></script>

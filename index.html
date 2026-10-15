@@ -12,31 +12,33 @@
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
   <!-- * styles-->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/video.css">
-  <link rel="stylesheet" href="css/styleColors.css">
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/video.css">
+  <link rel="stylesheet" href="src/css/navegacionFija.css">
+  <link rel="stylesheet" href="src/css/styleColors.css">
 </head>
 
 <body>
   <!-- * Header -->
-  <header>
-    <nav class="navegacion contenedor">
+  <header class="header" >
+    <div class="navegacion contenedor">
       <div class="navegacion__logo">
         <!-- <img src="logo.png" alt="Ismael Romero Logo" class="logo"> -->
       </div>
-      <div class="navegacion__enlaces">
-        <a class="navegacion__enlace" href="#">Sobre mí</a>
-        <a class="navegacion__enlace" href="#">Tecnologías</a>
-        <a class="navegacion__enlace" href="#">Mís Proyectos</a>
-        <a class="navegacion__enlace" href="#">Contactame</a>
-      </div>
+      <nav class="navegacion__enlaces">
+        <a class="navegacion__enlace" href="#inicio">Inicio</a>
+        <a class="navegacion__enlace" href="#sobre-mi">Sobre mí</a>
+        <a class="navegacion__enlace" href="#tecnologias">Tecnologías</a>
+        <a class="navegacion__enlace" href="#proyectos">Mís Proyectos</a>
+        <a class="navegacion__enlace" href="#contactame">Contactame</a>
+      </nav>
       <!-- <button><i class="fa-solid fa-moon"></i></button> -->
-    </nav>
+    </div>
   </header>
   <!-- * Main -->
   <main>
-    <section class="hero">
+    <section class="hero" id="inicio">
       <div class="video">
         <div class="overlay">
           <div class="contenedor contenido-video">
@@ -61,7 +63,7 @@
             <div class="hero__acciones">
               <a href="asset/CV_RomeroIsmael.pdf" download="CV_RomeroIsmael" class="hero__descargar"><i
                   class="fa-solid fa-download"></i> Descargar CV</a>
-              <a href="#" class="hero__proyectos">Ver mís proyectos <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#proyectos" class="hero__proyectos">Ver mís proyectos <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -71,7 +73,7 @@
       </div>
     </section>
     <!-- * Sobre mi -->
-    <section class="perfil">
+    <section class="perfil seccion" id="sobre-mi">
       <div class="contenedor">
         <h2 class="titulo">Sobre mí</h2>
         <div class="perfil__informacion">
@@ -137,7 +139,7 @@
       </div>
     </section>
     <!-- * Tecnologias-->
-    <section class="seccion-tecnologías">
+    <section class="seccion-tecnologías seccion" id="tecnologias">
       <div class="contenedor">
         <h2 class="titulo">Tecnologias</h2>
         <div class="flex">
@@ -415,7 +417,7 @@
     </section>
     <!-- * Proyectos-->
 
-    <section class="seccion-proyectos">
+    <section class="seccion-proyectos seccion" id="proyectos">
       <div class="contenedor">
         <h2 class="titulo">Mis proyectos</h2>
         <div class="flex">
@@ -470,7 +472,7 @@
       </div>
       </div>
     </section>
-    <section class="contactame">
+    <section class="contactame seccion" id="contactame">
       <div class="contenedor">
         <h2 class="titulo">Contactame</h2>
         <div class="flex__contactame">
@@ -520,6 +522,7 @@
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/8be980d900.js" crossorigin="anonymous"></script>
+  <script src="src/js/app.js"></script>
 </body>
 
 </html>

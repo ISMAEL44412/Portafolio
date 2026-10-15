@@ -1,0 +1,35 @@
+
+
+<header class="header">
+  <div class="contenedor contenido-header">
+    <h1>Tech & EDM festival</h1>
+    <nav class="navegacion-principal">
+      <a href="#lineup">Line up</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#boletos">Boletos</a>
+    </nav>
+  </div>
+</header>
+
+
+&.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-shadow: 0.1rem 0.2rem 0.3rem #333;
+}
+
+
+function navegacionFija() {
+  const header = document.querySelector(".header");
+  const sobreFestival = document.querySelector(".festival");
+
+  document.addEventListener("scroll", function () {
+    if (sobreFestival.getBoundingClientRect().bottom < 1) {
+      header.classList.add("fixed");
+    } else {
+      header.classList.remove("fixed");
+    }
+  });
+}

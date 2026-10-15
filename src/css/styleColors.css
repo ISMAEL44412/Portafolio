@@ -42,7 +42,10 @@ p {
 }
 
 /**** NAVEGACION****/
-header,
+header {
+  background-color: var(--cianOscuro);
+}
+
 main {
   background-color: #0f181c;
 }
